@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(62, 57, 57);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.task-stats {
+    margin: 10px 0;
+    font-size: 12px;
+    color: black;
+    border: 2px solid rgb(201, 182, 157);
+    background-color: rgb(232, 217, 197);
+    border-radius: 50%; 
+    width: 22%; 
+    padding: 9px; 
+    box-sizing: border-box;
+    margin-left: 36%;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.inputs input {
+    width: calc(100% - 68px);
+    padding: 8px;
+    border: 2px solid rgb(25, 108, 25);
+    outline: none;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 60px;
+    height: 39px;
+    background-color: rgb(39, 150, 39);
+    color: whitesmoke;
+    border: 2px solid rgb(25, 108, 25);
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    font-size: 17px;
+   
+    box-sizing: border-box;
+
+}
+
+.text ul {
+    position: relative;
+    background-color: rgb(225, 209, 190);
+    color: black;
+    font-size: 19px;
+    text-align: left;
+    padding: 8px;
+    list-style-type: none;
+    margin: 7px 0;
+    display: flex;
+    border-radius: 5px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.fa-trash, .fa-edit {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fa-edit {
+    border: none;
+    background-color: transparent;
+    margin-right: 28px;
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+
+.task-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.text ul .task-text {
+    flex-grow: 1;
+    margin-right: 50px; 
+}
+
+.fa-edit, .fa-trash, .task-checkbox {
+    flex-shrink: 0;
+}
+
+.task-item {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.completion-message {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
